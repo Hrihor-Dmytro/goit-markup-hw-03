@@ -1,0 +1,175 @@
+:root {
+  --primery-text-color: #757575;
+  --accent: #2196f3;
+  --title-text-color: #212121;
+  --primeri-white-color: #ffffff;
+  --optional-bt-color: #f5f4fa;
+  --tranparanted: rgba(255, 255, 255, 0.6);
+  --pouring: #2f303a;
+}
+
+/* основные стили */
+body {
+  background-color: var(--primeri-white-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.logo {
+  color: var(--accent);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-accent {
+  color: var(--title-text-color);
+}
+.list {
+  list-style: none;
+}
+.link,
+.logo {
+  text-decoration: none;
+}
+
+/* основная навигация сайта */
+
+.site-nav .link,
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+.site-nav .current {
+  color: var(--accent);
+}
+.auth-nav .link {
+  color: var(--primery-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent);
+}
+
+/* герой */
+.hero {
+  background-color: var(--pouring);
+}
+.hero-title {
+  color: var(--primeri-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primeri-white-color);
+}
+.button-hero {
+  background-color: var(--accent);
+  color: var(--primeri-white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  border: 0;
+  border-radius: 4px;
+}
+/* преимущества */
+
+.section-header {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section-text {
+  color: var(--primery-text-color);
+  line-height: 1.7;
+}
+/* команда */
+.comand {
+  background-color: var(--optional-bt-color);
+}
+.examples-work {
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+.example-cards {
+  background-color: var(--primeri-white-color);
+}
+.comand-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.comand-text {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* футтер */
+.footer {
+  background-color: var(--pouring);
+}
+.location {
+  color: var(--primeri-white-color);
+}
+.adress {
+  font-style: normal;
+}
+.contacts .transparent {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--tranparanted);
+}
+.contacts .transparent:hover,
+.contacts .transparent:focus {
+  color: var(--accent);
+}
+
+.footer-logo {
+  color: var(--primeri-white-color);
+}
+/* доп разметка портфолио */
+
+.button-filtr {
+  background-color: var(--optional-bt-color);
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+.current-button,
+.button-filtr:hover,
+.button-filtr:focus {
+  background-color: var(--accent);
+  color: var(--primeri-white-color);
+}
+/*разметка карточек */
+.list-filter {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.list-filter .text {
+  color: var(--primery-text-color);
+}
+.list-filter .card {
+  font-size: 18px;
+  line-height: 2;
+}
+.list-filter .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
