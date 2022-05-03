@@ -8,29 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- основная навигация сайта -->
-    <header>
-      <nav>
+    <header class="header-nav">
+      <div class=" my-nav container">
+        <nav class="my-nav">
         <a href="index.html" class="logo" lang="en" aria-label="логотип сайта">
           Web<span class="logo-accent">Studio</span></a
         >
         <ul class="site-nav list">
-          <li><a href="./index.html" class="current link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li class="item"><a href="./index.html" class="current link">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="auth-nav list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link"
+        </nav>
+        <ul class="auth-nav list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
           >
-        </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <!-- мой контент -->
     <main>
@@ -40,7 +43,7 @@
         <button type="button" class="button-hero">Заказать услугу</button>
       </section>
       <!-- преимущества -->
-      <section>
+      <section class="container">
         <h2 hidden class="">Особенности</h2>
         <ul class="section list">
           <li>

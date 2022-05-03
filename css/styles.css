@@ -33,8 +33,47 @@ body {
 .logo {
   text-decoration: none;
 }
+/* my nav */
+.my-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* контейнер */
+.container {
+  background-color: beige;
+  outline: 1px solid red;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* основная навигация сайта */
+.site-nav {
+  margin-left: 93px;
+}
+.auth-nav {
+  margin-left: auto;
+}
+.site-nav,
+.auth-nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.site-nav > .item,
+.auth-nav > .item {
+  /* outline: 1px solid red; */
+  margin-right: 50px;
+}
+.site-nav > .item:last-child,
+.auth-nav > .item:last-child {
+  margin-right: 0;
+}
 
 .site-nav .link,
 .auth-nav .link {
@@ -58,8 +97,13 @@ body {
 /* герой */
 .hero {
   background-color: var(--pouring);
+  text-align: center;
 }
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primeri-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -83,15 +127,25 @@ body {
   border-radius: 4px;
 }
 /* преимущества */
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .section-header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .section-text {
   color: var(--primery-text-color);
   line-height: 1.7;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* команда */
 .comand {
@@ -155,7 +209,7 @@ body {
   background-color: var(--accent);
   color: var(--primeri-white-color);
 }
-/*разметка карточек */
+/*разметка карточек портфолио */
 .list-filter {
   color: var(--title-text-color);
   text-decoration: none;
