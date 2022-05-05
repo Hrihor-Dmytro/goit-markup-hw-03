@@ -28,11 +28,20 @@ body {
 }
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 .link,
 .logo {
   text-decoration: none;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* my nav */
 .my-nav {
   display: flex;
@@ -42,8 +51,9 @@ body {
 /* контейнер */
 .container {
   /* background-color: beige;
-  outline: 1px solid red; */
-  width: 1200px;
+  outline: 1px solid red;. */
+
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -77,6 +87,10 @@ body {
 
 .site-nav .link,
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -141,6 +155,7 @@ body {
 /* преимущества */
 .benefits {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits-section {
@@ -176,30 +191,66 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* команда */
-.comand {
-  background-color: var(--optional-bt-color);
+/*примеры работ */
+
+.examples-finished {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+  padding-bottom: 94px;
 }
-.examples-work {
+
+.headline {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 94px;
+  padding-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
 }
+
+/* команда */
+
+.comand {
+  background-color: var(--optional-bt-color);
+}
+
 .example-cards {
   background-color: var(--primeri-white-color);
 }
 .comand-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .comand-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
 }
 
 /* футтер */
+.footer-nav {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 .footer {
   background-color: var(--pouring);
 }
@@ -209,13 +260,13 @@ body {
 .adress {
   font-style: normal;
 }
-.contacts .transparent {
+.transparent {
   font-size: 14px;
   line-height: 1.7;
   color: var(--tranparanted);
 }
-.contacts .transparent:hover,
-.contacts .transparent:focus {
+.transparent:hover,
+.transparent:focus {
   color: var(--accent);
 }
 
