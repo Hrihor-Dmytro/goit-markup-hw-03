@@ -38,19 +38,20 @@
     <!-- мой контент -->
     <main>
       <section>
-        <h1 hidden>кнопки фильтра</h1>
-        <ul class="list">
-          <li><button type="button" class="button-filtr current-button">Все</button></li>
-          <li><button type="button" class="button-filtr">Веб-сайты</button></li>
-          <li>
-            <button type="button" class="button-filtr">Приложения</button>
-          </li>
-          <li><button type="button" class="button-filtr">Дизайн</button></li>
-          <li><button type="button" class="button-filtr">Маркетинг</button></li>
-        </ul>
+        <div class="container">
+          <h1 hidden>кнопки фильтра</h1>
+            <ul class="portfolio-nav list">
+              <li class="portfolio-button"><button type="button" class="button-filtr current-button">Все</button></li>
+              <li class="portfolio-button"><button type="button" class="button-filtr">Веб-сайты</button></li>
+              <li class="portfolio-button">
+              <button type="button" class="button-filtr">Приложения</button>
+              </li>
+              <li class="portfolio-button"><button type="button" class="button-filtr">Дизайн</button></li>
+              <li class="portfolio-button"><button type="button" class="button-filtr">Маркетинг</button></li>
+            </ul>
           <!-- секция контента -->
         <ul class="card list">
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter">
               <img
                 src="./img-portfolio/laptop.jpg"
@@ -62,7 +63,7 @@
               <p class="text">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/poster.jpg"
@@ -76,7 +77,7 @@
               <p class="card text">Дизайн</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/logo-cafe.jpg"
@@ -90,7 +91,7 @@
               <p class="text">Приложение</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/headphones.jpg"
@@ -102,7 +103,7 @@
               <p class="text">Маркетинг</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter">
               <img
                 src="./img-portfolio/box.jpg"
@@ -114,7 +115,7 @@
               <p class="text">Приложение</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/computer.jpg"
@@ -126,7 +127,7 @@
               <p class="text">Веб-сайт</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/newspaper.jpg"
@@ -140,7 +141,7 @@
               <p class="text">Дизайн</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/card.jpg"
@@ -152,7 +153,7 @@
               <p class="text">Маркетинг</p></a
             >
           </li>
-          <li>
+          <li class="card-box">
             <a href="" class="list-filter"
               ><img
                 src="./img-portfolio/laptop-work.jpg"
@@ -165,24 +166,25 @@
             >
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- подвал -->
     <footer class="footer">
       <div class="container">
-        <a href="./portfolio.html" class="logo" lang="en" aria-label="логотип сайта">Web</span
+        <a href="./index.html" class="logo footer-nav" lang="en">Web</span
         ><span class="footer-logo">Studio</span>
         </a>
         <address class="adress">
         <ul class="list">
           <li class="location">г. Киев, пр-т Леси Украинки, 26</li>
           <li class="contacts list">
-            <a href="mailto:info@example.com" class="transparent link"
+            <a href="mailto:info@example.com" class="transparent mail link"
               >info@example.com</a
             >
           </li>
           <li class="contacts list">
-            <a href="tel:+380991111111" class="transparent link"
+            <a href="tel:+380991111111" class="transparent phone link"
               >+38 099 111 11 11</a
             >
           </li>
