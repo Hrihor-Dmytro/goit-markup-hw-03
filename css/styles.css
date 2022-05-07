@@ -8,7 +8,7 @@
   --pouring: #2f303a;
 }
 
-/* основные стили */
+/*-------------- основные стили---------------- */
 body {
   background-color: var(--primeri-white-color);
   color: var(--title-text-color);
@@ -23,6 +23,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo-accent {
   color: var(--title-text-color);
 }
@@ -32,6 +33,7 @@ body {
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .link,
 .logo {
   text-decoration: none;
@@ -42,21 +44,28 @@ img {
   max-width: 100%;
 }
 
-/* my nav */
+/*---------------- my nav-------------------- */
 .my-nav {
   display: flex;
-  align-items: center;
+}
+
+.my-nav > .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.my-nav.container {
   border-bottom: 1px solid #ececec;
 }
 
-/* контейнер */
+/*--------------- контейнер --------------------*/
 .container {
-  /* background-color: beige;
-  outline: 1px solid red;. */
-
   width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,10 +75,8 @@ img {
   padding-bottom: 94px;
 }
 
-/* основная навигация сайта */
-.site-nav {
-  margin-left: 93px;
-}
+/*----------- основная навигация сайта---------- */
+
 .auth-nav {
   margin-left: auto;
 }
@@ -83,7 +90,6 @@ img {
 
 .site-nav > .item,
 .auth-nav > .item {
-  /* outline: 1px solid red; */
   margin-right: 50px;
 }
 .site-nav > .item:last-child,
@@ -114,7 +120,7 @@ img {
   color: var(--accent);
 }
 
-/* герой */
+/* -------------герой------------ */
 .hero {
   background-color: var(--pouring);
   text-align: center;
@@ -156,7 +162,7 @@ img {
   border: 0;
   border-radius: 4px;
 }
-/* преимущества */
+/* -------------преимущества------------- */
 
 .benefits-section {
   display: flex;
@@ -191,40 +197,55 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-/*примеры работ */
+/*-----------примеры работ--------- */
+.examples.section {
+  padding-top: 0;
+}
 
 .examples-finished {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
-  margin: 0;
 }
 
 .headline {
   margin-top: 0;
   margin-bottom: 0;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
 }
 
-/* команда */
+/*------------- команда------------- */
 
 .comand {
   background-color: var(--optional-bt-color);
 }
-
+.comand-box {
+  display: flex;
+  flex-wrap: wrap;
+}
 .example-cards {
   background-color: var(--primeri-white-color);
+
+  width: 270px;
+  height: 368px;
+
+  margin-right: 30px;
 }
+.example-cards:last-child {
+  margin-right: 0;
+}
+.example-cards > img {
+  margin-bottom: 30px;
+}
+
 .comand-name {
+  padding-bottom: 0px;
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 30px;
-  padding-bottom: 0px;
 
   font-weight: 500;
   font-size: 16px;
@@ -234,7 +255,6 @@ img {
 .comand-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
 
   color: var(--primery-text-color);
   font-size: 16px;
@@ -242,18 +262,23 @@ img {
   text-align: center;
 }
 
-/* футтер */
-.footer-nav {
-  display: block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
+/*------------ футтер------------- */
 
 .footer {
   background-color: var(--pouring);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo.futter {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .location {
   color: var(--primeri-white-color);
+
+  display: inline-block;
   margin-bottom: 9px;
 }
 .adress {
@@ -270,18 +295,17 @@ img {
 }
 
 .transparent.mail {
-  display: block;
+  display: inline-block;
   margin-bottom: 9px;
 }
 .transparent.phone {
-  display: block;
-  padding-bottom: 60px;
+  display: inline-block;
 }
 
 .footer-logo {
   color: var(--primeri-white-color);
 }
-/* доп разметка портфолио */
+/* -------------доп разметка портфолио ---------*/
 .portfolio-nav {
   display: flex;
   justify-content: center;
@@ -311,10 +335,15 @@ img {
   background-color: var(--accent);
   color: var(--primeri-white-color);
 }
-/*разметка карточек портфолио */
+/*--------разметка карточек портфолио----- */
 .card.list {
   display: flex;
   flex-wrap: wrap;
+}
+.card-border {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .list-filter {
@@ -328,10 +357,6 @@ img {
 
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 .card-box:nth-child(3n) {
   margin-right: 0;
